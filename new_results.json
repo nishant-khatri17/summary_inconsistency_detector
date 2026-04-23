@@ -1,0 +1,94 @@
+{
+  "model": "./nli_deberta_base_vitaminc",
+  "scorer": "SIFiD+CWCS Improved",
+  "evaluated_on": "frank",
+  "params": {
+    "beta": 0.0,
+    "window": 1,
+    "margin_weight": 0.8,
+    "lambda_c": 0.25,
+    "con_threshold": 0.25,
+    "claim_temp": 5.0,
+    "softmin_alpha": 3.0,
+    "topk": 3,
+    "blend_w": 0.5
+  },
+  "n_datasets": 1,
+  "overall_best_bacc": 0.818956197950032,
+  "overall_zs_bacc": 0.8145619795003203,
+  "overall_roc_auc": 0.8550408392056374,
+  "delta_vs_zs": 0.004394218449711773,
+  "per_dataset": {
+    "frank": {
+      "best_strategy": "topk_mean",
+      "balanced_accuracy": 0.818956197950032,
+      "roc_auc": 0.8550408392056374,
+      "threshold": 0.25999999999999995,
+      "n_samples": 671,
+      "n_consistent": 223,
+      "n_inconsistent": 448,
+      "per_strategy": {
+        "zs_max": {
+          "balanced_accuracy": 0.8145619795003203,
+          "roc_auc": 0.8825572549647661,
+          "threshold": 0.48999999999999994
+        },
+        "sifid_zs": {
+          "balanced_accuracy": 0.8145619795003203,
+          "roc_auc": 0.8831878603459322,
+          "threshold": 0.48999999999999994
+        },
+        "cwcs": {
+          "balanced_accuracy": 0.8177300208199871,
+          "roc_auc": 0.8901395339525944,
+          "threshold": 0.84
+        },
+        "sifid_cwcs": {
+          "balanced_accuracy": 0.8132857543241512,
+          "roc_auc": 0.8896740871236386,
+          "threshold": 0.83
+        },
+        "sifid_softmin": {
+          "balanced_accuracy": 0.8167440743113389,
+          "roc_auc": 0.8803751601537476,
+          "threshold": 0.37999999999999995
+        },
+        "net_entailment": {
+          "balanced_accuracy": 0.8121897021140294,
+          "roc_auc": 0.8840436819346573,
+          "threshold": 0.5299999999999999
+        },
+        "scaled_ent": {
+          "balanced_accuracy": 0.8121897021140294,
+          "roc_auc": 0.883528187059577,
+          "threshold": 0.5599999999999999
+        },
+        "topk_mean": {
+          "balanced_accuracy": 0.818956197950032,
+          "roc_auc": 0.8550408392056374,
+          "threshold": 0.25999999999999995
+        },
+        "row_normalized": {
+          "balanced_accuracy": 0.7811398942985266,
+          "roc_auc": 0.8033862508007688,
+          "threshold": 0.5299999999999999
+        },
+        "hybrid_blend": {
+          "balanced_accuracy": 0.8134358984625241,
+          "roc_auc": 0.8828775624599614,
+          "threshold": 0.42999999999999994
+        },
+        "sifid_net_ent": {
+          "balanced_accuracy": 0.8121897021140294,
+          "roc_auc": 0.8840436819346573,
+          "threshold": 0.5299999999999999
+        },
+        "sifid_scaled_ent": {
+          "balanced_accuracy": 0.8121897021140294,
+          "roc_auc": 0.8839385810377962,
+          "threshold": 0.5599999999999999
+        }
+      }
+    }
+  }
+}
