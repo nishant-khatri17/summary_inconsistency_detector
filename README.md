@@ -135,11 +135,3 @@ score.py
 * FactCC and SummEval evaluation
 * Retrieval-augmented consistency verification
 
-## Authors
-
-* Nishant Khatri
-* Siddharth Goswami
-* Arshbir Singh Dang
-* Manav Jindal
-
-IIIT Bangalore
